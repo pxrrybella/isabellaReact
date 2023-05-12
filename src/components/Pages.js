@@ -18,11 +18,11 @@ const PageZero = () => {
         (nombre !== "" ?
 
             //ABOUT ME
-            <div className="container">
+            <div className="container mb-5">
                 <img alt="close button" className="header-button" src={maxbutton} /><img alt="close button" class="header-button" src={minbutton} /><img alt="close button" class="header-button" src={closebutton} />
                 <h3>⋆｡°✩ Isabella Parry</h3>
                 <p>Un gusto conocerte, {nombre}! ♡</p>
-                <p className="now-playing">ˏˋ°•*⁀➷ Actualmente escuchando: <a href="https://youtu.be/sOS9aOIXPEk">Something About Us - Daft Punk</a></p>
+                <p className="now-playing">ˏˋ°•*⁀➷ Actualmente escuchando: <a href="https://www.youtube.com/watch?v=OblL026SvD4">Still Into You - Paramore</a></p>
                 <div className="accordion accordion-flush" id="accordionFlushExample">
                     <div className="accordion-item">
                         <h2 class="accordion-header">
@@ -35,12 +35,13 @@ const PageZero = () => {
                                 <div class="d-flex">
                                 <div>
                                     <ul>
-                                        <li>JavaScrip</li>
+                                        <li>JavaScript</li>
                                         <li>REACT</li>
                                         <li>JAVA</li>
-                                        <li>SpringBoot</li>
+                                        <li>Springboot</li>
                                         <li>HTML5</li>
                                         <li>CSS3</li>
+                                        <li>MySQL</li>
                                     </ul>
                                 </div>
                                 <div>
@@ -63,8 +64,8 @@ const PageZero = () => {
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                             <div className="accordion-body">
-                                <div className="d-flex">
-                                <img alt="photo" className="photo" src={photo} />
+                                <div className="d-md-flex">
+                                <img alt="Isabella Parry" className="photo" src={photo} />
                                 <p>Desde muy niña siempre me llamó la atención todo lo que tenía que ver con contenido multimedia. Cuando tenía como 7 años, mi pasatiempo favorito era hacer videos en <i>MovieMaker</i>.
                                 <br/>
                                 Siempre soñé con diseñar páginas web e hice un montón de blogs los cuales personalizaba a mi gusto.
@@ -94,7 +95,7 @@ const PageZero = () => {
             </div>
             :
             //INGRESAR NOMBRE
-            <div className="container">
+            <div className="container animate">
                 <img alt="max button" className="header-button" src={maxbutton} /><img alt="min button" class="header-button" src={minbutton} /><img alt="close button" class="header-button" src={closebutton}/>
                 <div>
                     <form onSubmit={submit}>
